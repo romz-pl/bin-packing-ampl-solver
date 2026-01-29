@@ -27,3 +27,9 @@ $$
 $$
 
 The first set of constraints impose that the capacity of any used bin is not exceeded, while the second set of constraints ensure that each item is packed into exactly one bin.
+
+
+## References
++  BPPLIB: A library for bin packing and cutting stock problems, [Optimization Letters](https://doi.org/10.1007/s11590-017-1192-z)
++  Bin packing and cutting stock problems: Mathematical models and exact algorithms, [European Journal of Operational Research](https://doi.org/10.1016/j.ejor.2016.04.030)
++ 
