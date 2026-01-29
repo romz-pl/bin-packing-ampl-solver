@@ -32,4 +32,5 @@ The first set of constraints impose that the capacity of any used bin is not exc
 ## References
 +  BPPLIB: A library for bin packing and cutting stock problems, [Optimization Letters](https://doi.org/10.1007/s11590-017-1192-z)
 +  Bin packing and cutting stock problems: Mathematical models and exact algorithms, [European Journal of Operational Research](https://doi.org/10.1016/j.ejor.2016.04.030)
++  BPPLIB - A Bin Packing Problem Library: [A collection of codes, benchmarks, and links](https://github.com/mdelorme2/BPPLIB/tree/main)
 
