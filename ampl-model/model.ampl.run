@@ -1,0 +1,16 @@
+option gurobi_options 'presolve=2 iis=1 outlev=1';
+
+option presolve 0;
+option show_stats 2;
+
+display N;
+display U;
+display CAPACITY;
+display WEIGHT;
+
+solve;
+
+printf "Number of bins\n";
+printf "==============\n";
+display sum{j in BINS} Y[j];
+
