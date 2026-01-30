@@ -38,6 +38,9 @@ The first set of constraints impose that the capacity of any used bin is not exc
 + OR-Library by J. E. Beasley: [Bin packing - one-dimensional](https://people.brunel.ac.uk/~mastjjb/jeb/orlib/binpackinfo.html)
 + Oscar-Oliveira OR-Datasets: [Cutting and Packing Problems on GitHub](https://github.com/Oscar-Oliveira/OR-Datasets/tree/master)
 
+### 2021
++ Exact Solution Techniques for Two-dimensional Cutting and Packing, [European Journal of Operational Research](https://doi.org/10.1016/j.ejor.2020.06.050)
+
 ### 2020
 + New Symmetry-less ILP Formulation for the Classical One Dimensional Bin-Packing Problem, [Computing and Combinatorics. COCOON 2020. Lecture Notes in Computer Science, vol 12273](https://doi.org/10.1007/978-3-030-58150-3_34)
 
