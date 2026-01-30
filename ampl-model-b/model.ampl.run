@@ -1,0 +1,55 @@
+option gurobi_options 'presolve=2 iis=1 outlev=1';
+
+option presolve 0;
+option show_stats 2;
+
+
+
+display N;
+
+display CAPACITY;
+display WEIGHT;
+
+
+for{k in 80..100}
+{
+	let U := k;
+	printf "\n\n";
+	printf "=========================================================\n";
+	printf "=\n";
+	printf "=     U = %d\n", U;
+	printf "=\n";
+	printf "=========================================================\n";
+	solve;
+	if solve_result = "infeasible" then
+	{
+		printf "--- infeasible for U = %d ---\n\n", k;
+		continue;
+	}
+	else
+	{
+		printf "Items in bins\n";
+		printf "==============\n";
+		for{b in BINS}
+		{
+			printf "%3d : ", b;
+			for{i in ITEMS}
+			{
+				if X[i, b] > 0 then
+				{
+					printf "%d ", i;
+				}
+			}
+			printf "\n";
+		}
+
+		printf "Number of bins\n";
+		printf "==============\n";
+		printf "%d\n", sum{b in BINS} (if sum{i in ITEMS} X[i, b] > 0 then 1 else 0);
+		
+		break;
+	}
+
+}
+
+
