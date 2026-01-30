@@ -40,5 +40,8 @@ The first set of constraints impose that the capacity of any used bin is not exc
 ### 2016
 +  Bin packing and cutting stock problems: Mathematical models and exact algorithms, [European Journal of Operational Research](https://doi.org/10.1016/j.ejor.2016.04.030)
 
+### 2004
++ Problems, Models and Algorithms in One- and Two-Dimensional Cutting, [PhD Thesis, Gleb Belov](https://d-nb.info/970782489/34)
+
 ### 2002
 + LP models for bin packing and cutting stock problems, [European Journal of Operational Research](https://doi.org/10.1016/S0377-2217(02)00124-8)
