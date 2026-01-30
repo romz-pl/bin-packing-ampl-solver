@@ -32,7 +32,7 @@ The first set of constraints impose that the capacity of any used bin is not exc
 ## References
 
 ### 2026
-+  BPPLIB - A Bin Packing Problem Library: [A collection of codes, benchmarks, and links](https://github.com/mdelorme2/BPPLIB/tree/main)
++  BPPLIB - A Bin Packing Problem Library: [A collection of codes, benchmarks, and links on GitHub](https://github.com/mdelorme2/BPPLIB/tree/main)
 
 ### 2018
 +  BPPLIB: A library for bin packing and cutting stock problems, [Optimization Letters](https://doi.org/10.1007/s11590-017-1192-z)
