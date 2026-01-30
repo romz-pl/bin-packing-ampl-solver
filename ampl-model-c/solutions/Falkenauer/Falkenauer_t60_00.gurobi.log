@@ -1,0 +1,134 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18299261
+   Password : hOxtgjcV
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-30 06:17:32
+   End      : 2026-01-30 06:17:50
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+
+amplin, line 146 (offset 1697):
+	k is not defined
+context:  printf "--- infeasible for U = %d ---\n\n",  >>> k; <<< 
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-1.neos-server.org
+N = 60
+
+CAPACITY = 1000
+
+WEIGHT [*] :=
+ 1 495    8 444   15 372   22 357   29 315   36 288   43 273   50 263   57 252
+ 2 474    9 439   16 370   23 355   30 307   37 287   44 272   51 262   58 252
+ 3 473   10 430   17 366   24 351   31 303   38 283   45 272   52 261   59 252
+ 4 472   11 419   18 366   25 350   32 299   39 275   46 271   53 259   60 251
+ 5 466   12 414   19 366   26 350   33 298   40 275   47 269   54 258
+ 6 450   13 410   20 363   27 347   34 298   41 274   48 269   55 255
+ 7 445   14 395   21 361   28 320   35 292   42 273   49 268   56 254
+;
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+60 variables, all nonlinear
+20 constraints, all nonlinear; 1200 nonzeros
+	20 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 60 variables (60 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  20 linear;
+Algebraic expressions:  1200 ifthen;
+Logical expressions:  1200 conditional (in)equalitie(s);
+
+AMPL MP final model has 2462 variables (60 integer, 2400 binary);
+Objectives: 1 linear; 
+Constraints:  140 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 140 rows, 2462 columns and 3660 nonzeros
+Model fingerprint: 0x20bc9878
+Variable types: 1202 continuous, 1260 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 2e+01]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 60 rows and 1262 columns
+Presolve time: 0.01s
+Presolved: 80 rows, 1200 columns, 2400 nonzeros
+Variable types: 0 continuous, 1200 integer (1200 binary)
+Root relaxation presolved: 80 rows, 1200 columns, 2400 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 117 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   23          -    0.00000      -     -    0s
+     0     0    0.00000    0   42          -    0.00000      -     -    0s
+     0     0    0.00000    0   63          -    0.00000      -     -    0s
+     0     0    0.00000    0   35          -    0.00000      -     -    0s
+     0     0    0.00000    0   47          -    0.00000      -     -    0s
+     0     0    0.00000    0   37          -    0.00000      -     -    0s
+     0     0    0.00000    0   37          -    0.00000      -     -    0s
+     0     2    0.00000    0   35          -    0.00000      -     -    0s
+ 13374    76    0.00000   49    8          -    0.00000      -   3.0    5s
+*37337   141              50       0.0000000    0.00000  0.00%   5.0    8s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 24
+  Clique: 2
+  MIR: 2
+  StrongCG: 3
+  Flow cover: 3
+  Inf proof: 2
+  RLT: 2
+
+Explored 37396 nodes (439771 simplex iterations) in 8.84 seconds (13.08 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 0
+439771 simplex iterations
+37396 branching nodes
+ Error (2) in /opt/ampl/ampl -R amplin
+
+NEOS Server Home
+
