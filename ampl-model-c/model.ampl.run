@@ -14,7 +14,7 @@ solve;
 
 if solve_result = "infeasible" then
 {
-	printf "--- infeasible for U = %d ---\n\n", k;
+	printf "--- infeasible for U = %d ---\n\n", U;
 	exit;
 }
 
