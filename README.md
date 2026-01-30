@@ -39,7 +39,7 @@ The first set of constraints impose that the capacity of any used bin is not exc
 
 ### 2018
 +  BPPLIB: A library for bin packing and cutting stock problems, [Optimization Letters](https://doi.org/10.1007/s11590-017-1192-z)
-+  Introduction to Cutting and Packing Optimization: Problems, Modeling Approaches, Solution Methods, [Book](https://doi.org/10.1007/978-3-319-64403-5)
++  One-Dimensional Bin Packing, [Chapter in Book Introduction to Cutting and Packing Optimization: Problems, Modeling Approaches, Solution Methods](https://doi.org/10.1007/978-3-319-64403-5_3)
 
 ### 2016
 +  Bin packing and cutting stock problems: Mathematical models and exact algorithms, [European Journal of Operational Research](https://doi.org/10.1016/j.ejor.2016.04.030)
