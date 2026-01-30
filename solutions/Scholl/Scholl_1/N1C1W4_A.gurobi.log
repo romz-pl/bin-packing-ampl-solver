@@ -1,0 +1,124 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18298582
+   Password : agmrnlLO
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-30 01:37:25
+   End      : 2026-01-30 01:37:39
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+N = 50
+
+U = 50
+
+CAPACITY = 100
+
+WEIGHT [*] :=
+ 1 99    6 89   11 84   16 79   21 65   26 60   31 52   36 49   41 40   46 34
+ 2 95    7 89   12 84   17 77   22 64   27 56   32 51   37 47   42 40   47 32
+ 3 93    8 88   13 84   18 76   23 64   28 56   33 50   38 44   43 40   48 31
+ 4 92    9 88   14 80   19 72   24 63   29 53   34 50   39 41   44 35   49 31
+ 5 91   10 85   15 80   20 69   25 63   30 53   35 49   40 41   45 35   50 30
+;
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+2550 variables, all binary
+149 constraints, all linear; 5148 nonzeros
+	50 equality constraints
+	99 inequality constraints
+1 linear objective; 50 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 2550 variables (0 integer, 2550 binary);
+Objectives: 1 linear; 
+Constraints:  149 linear;
+
+AMPL MP final model has 2550 variables (0 integer, 2550 binary);
+Objectives: 1 linear; 
+Constraints:  149 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 149 rows, 2550 columns and 5148 nonzeros
+Model fingerprint: 0x71896c3c
+Variable types: 0 continuous, 2550 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 2 rows and 2 columns
+Presolve time: 0.10s
+Presolved: 147 rows, 2548 columns, 5142 nonzeros
+Variable types: 0 continuous, 2548 integer (2548 binary)
+Found heuristic solution: objective 50.0000000
+Found heuristic solution: objective 49.0000000
+Root relaxation presolve removed 1 rows and 1 columns
+Root relaxation presolved: 146 rows, 2547 columns, 5140 nonzeros
+
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 3.403000e+01, 822 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   34.03000    0   10   49.00000   34.03000  30.6%     -    0s
+     0     0   35.00000    0   18   49.00000   35.00000  28.6%     -    0s
+H    0     0                      38.0000000   35.00000  7.89%     -    0s
+H    0     0                      35.0000000   35.00000  0.00%     -    0s
+     0     0   35.00000    0   18   35.00000   35.00000  0.00%     -    0s
+
+Explored 1 nodes (3048 simplex iterations) in 0.14 seconds (0.13 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 4: 35 38 49 50 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.500000000000e+01, best bound 3.500000000000e+01, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 35
+3048 simplex iterations
+1 branching node
+Number of bins
+==============
+sum{j in BINS} Y[j] = 35
+
+NEOS Server Home
+
