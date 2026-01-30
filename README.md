@@ -33,6 +33,7 @@ The first set of constraints impose that the capacity of any used bin is not exc
 
 ### 2026
 +  BPPLIB - A Bin Packing Problem Library: [A collection of codes, benchmarks, and links on GitHub](https://github.com/mdelorme2/BPPLIB/tree/main)
++  Oscar-Oliveira OR-Datasets: [Cutting and Packing Problems on GitHub](https://github.com/Oscar-Oliveira/OR-Datasets/tree/master)
 
 ### 2020
 + New Symmetry-less ILP Formulation for the Classical One Dimensional Bin-Packing Problem, [Computing and Combinatorics. COCOON 2020. Lecture Notes in Computer Science, vol 12273](https://doi.org/10.1007/978-3-030-58150-3_34)
