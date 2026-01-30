@@ -1,0 +1,22 @@
+option gurobi_options 'presolve=2 iis=1 outlev=1';
+
+option presolve 0;
+option show_stats 2;
+
+
+
+display N;
+
+display CAPACITY;
+display WEIGHT;
+
+solve;
+
+if solve_result = "infeasible" then
+{
+	printf "--- infeasible for U = %d ---\n\n", k;
+	exit;
+}
+
+display X;
+
