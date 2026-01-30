@@ -1,5 +1,5 @@
 param N := 120;
-param U := 120;
+param U := 40;
 param CAPACITY := 1000;
 
 param WEIGHT :=
