@@ -32,6 +32,7 @@ The first set of constraints impose that the capacity of any used bin is not exc
 ## References
 
 ### 2026
++ Assembly Line Balancing: Data sets & Research topics, [Bin Packing Problem](https://assembly-line-balancing.de/further-data-sets/bin-packing-problem-bpp/)
 + BPPLIB - A Bin Packing Problem Library: [A collection of codes, benchmarks, and links on GitHub](https://github.com/mdelorme2/BPPLIB/tree/main)
 + ESICUP Cutting & Packing Datasets: [A collection of datasets for academic research on GitHub](https://github.com/ESICUP/datasets)
 + OR-Library by J. E. Beasley: [Bin packing - one-dimensional](https://people.brunel.ac.uk/~mastjjb/jeb/orlib/binpackinfo.html)
