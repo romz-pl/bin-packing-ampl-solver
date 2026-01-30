@@ -1,0 +1,2074 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18299250
+   Password : zCgbukdT
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-30 06:07:57
+   End      : 2026-01-30 06:08:12
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+N = 60
+
+CAPACITY = 1000
+
+WEIGHT [*] :=
+ 1 495    8 444   15 372   22 357   29 315   36 288   43 273   50 263   57 252
+ 2 474    9 439   16 370   23 355   30 307   37 287   44 272   51 262   58 252
+ 3 473   10 430   17 366   24 351   31 303   38 283   45 272   52 261   59 252
+ 4 472   11 419   18 366   25 350   32 299   39 275   46 271   53 259   60 251
+ 5 466   12 414   19 366   26 350   33 298   40 275   47 269   54 258
+ 6 450   13 410   20 363   27 347   34 298   41 274   48 269   55 255
+ 7 445   14 395   21 361   28 320   35 292   42 273   49 268   56 254
+;
+
+
+
+=========================================================
+=
+=     U = 1
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+60 variables, all binary
+61 constraints, all linear; 120 nonzeros
+	60 equality constraints
+	1 inequality constraint
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 60 variables (60 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  61 linear;
+
+AMPL MP final model has 60 variables (60 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  61 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 61 rows, 60 columns and 120 nonzeros
+Model fingerprint: 0x2e642bb9
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+Presolve removed 0 rows and 60 columns
+Presolve time: 0.00s
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.187500e+03   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Infeasible model
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+IIS computed: 1 constraints and 60 bounds
+IIS runtime: 0.00 seconds (0.00 work units)
+Gurobi 12.0.3: infeasible problem
+0 simplex iterations
+
+suffix iis symbolic OUT;
+
+option iis_table '\
+0	non	not in the iis\
+1	low	lower bound in the iis\
+2	fix	both bounds in the iis\
+3	upp	upper bound in the iis\
+4	mem	member\
+5	pmem	possible member\
+6	plow	possibly lower bound\
+7	pupp	possibly upper bound\
+8	bug\
+';
+suffix dunbdd OUT;
+--- infeasible for U = 1 ---
+
+
+
+=========================================================
+=
+=     U = 2
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+120 variables, all binary
+62 constraints, all linear; 240 nonzeros
+	60 equality constraints
+	2 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 120 variables (0 integer, 120 binary);
+Objectives: 1 linear; 
+Constraints:  62 linear;
+
+AMPL MP final model has 120 variables (0 integer, 120 binary);
+Objectives: 1 linear; 
+Constraints:  62 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 62 rows, 120 columns and 240 nonzeros
+Model fingerprint: 0x2f243507
+Variable types: 0 continuous, 120 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve removed 59 rows and 82 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        62         -         0       240         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       62        62        62         0         0         0           0s
+
+IIS computed: 62 constraints, 0 bounds
+IIS runtime: 0.01 seconds (0.00 work units)
+Gurobi 12.0.3: infeasible problem
+0 simplex iterations
+--- infeasible for U = 2 ---
+
+
+
+=========================================================
+=
+=     U = 3
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+180 variables, all binary
+63 constraints, all linear; 360 nonzeros
+	60 equality constraints
+	3 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 180 variables (0 integer, 180 binary);
+Objectives: 1 linear; 
+Constraints:  63 linear;
+
+AMPL MP final model has 180 variables (0 integer, 180 binary);
+Objectives: 1 linear; 
+Constraints:  63 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 63 rows, 180 columns and 360 nonzeros
+Model fingerprint: 0xefc1c170
+Variable types: 0 continuous, 180 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 63 rows, 180 columns, 360 nonzeros
+Variable types: 0 continuous, 180 integer (180 binary)
+Root relaxation presolved: 63 rows, 180 columns, 360 nonzeros
+
+
+Root relaxation: infeasible, 39 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (39 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        63         -         0       360         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       63        63        63         0         0         0           0s
+
+IIS computed: 63 constraints, 0 bounds
+IIS runtime: 0.01 seconds (0.00 work units)
+Gurobi 12.0.3: infeasible problem
+39 simplex iterations
+1 branching node
+--- infeasible for U = 3 ---
+
+
+
+=========================================================
+=
+=     U = 4
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+240 variables, all binary
+64 constraints, all linear; 480 nonzeros
+	60 equality constraints
+	4 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 240 variables (0 integer, 240 binary);
+Objectives: 1 linear; 
+Constraints:  64 linear;
+
+AMPL MP final model has 240 variables (0 integer, 240 binary);
+Objectives: 1 linear; 
+Constraints:  64 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 64 rows, 240 columns and 480 nonzeros
+Model fingerprint: 0xdc0832e8
+Variable types: 0 continuous, 240 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 64 rows, 240 columns, 480 nonzeros
+Variable types: 0 continuous, 240 integer (240 binary)
+Root relaxation presolved: 64 rows, 240 columns, 480 nonzeros
+
+
+Root relaxation: infeasible, 53 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (53 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        64         -         0       480         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       64        64        64         0         0         0           0s
+
+IIS computed: 64 constraints, 0 bounds
+IIS runtime: 0.01 seconds (0.00 work units)
+Gurobi 12.0.3: infeasible problem
+53 simplex iterations
+1 branching node
+--- infeasible for U = 4 ---
+
+
+
+=========================================================
+=
+=     U = 5
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+300 variables, all binary
+65 constraints, all linear; 600 nonzeros
+	60 equality constraints
+	5 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 300 variables (0 integer, 300 binary);
+Objectives: 1 linear; 
+Constraints:  65 linear;
+
+AMPL MP final model has 300 variables (0 integer, 300 binary);
+Objectives: 1 linear; 
+Constraints:  65 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 65 rows, 300 columns and 600 nonzeros
+Model fingerprint: 0xf6b94648
+Variable types: 0 continuous, 300 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 65 rows, 300 columns, 600 nonzeros
+Variable types: 0 continuous, 300 integer (300 binary)
+Root relaxation presolved: 65 rows, 300 columns, 600 nonzeros
+
+
+Root relaxation: infeasible, 54 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (54 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        65         -         0       600         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       65        65        65         0         0         0           0s
+
+IIS computed: 65 constraints, 0 bounds
+IIS runtime: 0.01 seconds (0.00 work units)
+Gurobi 12.0.3: infeasible problem
+54 simplex iterations
+1 branching node
+--- infeasible for U = 5 ---
+
+
+
+=========================================================
+=
+=     U = 6
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+360 variables, all binary
+66 constraints, all linear; 720 nonzeros
+	60 equality constraints
+	6 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 360 variables (0 integer, 360 binary);
+Objectives: 1 linear; 
+Constraints:  66 linear;
+
+AMPL MP final model has 360 variables (0 integer, 360 binary);
+Objectives: 1 linear; 
+Constraints:  66 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 66 rows, 360 columns and 720 nonzeros
+Model fingerprint: 0xdbf489f4
+Variable types: 0 continuous, 360 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 66 rows, 360 columns, 720 nonzeros
+Variable types: 0 continuous, 360 integer (360 binary)
+Root relaxation presolved: 66 rows, 360 columns, 720 nonzeros
+
+
+Root relaxation: infeasible, 63 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (63 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        66         -         0       720         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       66        66        66         0         0         0           0s
+
+IIS computed: 66 constraints, 0 bounds
+IIS runtime: 0.01 seconds (0.00 work units)
+Gurobi 12.0.3: infeasible problem
+63 simplex iterations
+1 branching node
+--- infeasible for U = 6 ---
+
+
+
+=========================================================
+=
+=     U = 7
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+420 variables, all binary
+67 constraints, all linear; 840 nonzeros
+	60 equality constraints
+	7 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 420 variables (0 integer, 420 binary);
+Objectives: 1 linear; 
+Constraints:  67 linear;
+
+AMPL MP final model has 420 variables (0 integer, 420 binary);
+Objectives: 1 linear; 
+Constraints:  67 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 67 rows, 420 columns and 840 nonzeros
+Model fingerprint: 0x8913b344
+Variable types: 0 continuous, 420 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 67 rows, 420 columns, 840 nonzeros
+Variable types: 0 continuous, 420 integer (420 binary)
+Root relaxation presolved: 67 rows, 420 columns, 840 nonzeros
+
+
+Root relaxation: infeasible, 72 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (72 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        67         -         0       840         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       67        67        67         0         0         0           0s
+
+IIS computed: 67 constraints, 0 bounds
+IIS runtime: 0.02 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+72 simplex iterations
+1 branching node
+--- infeasible for U = 7 ---
+
+
+
+=========================================================
+=
+=     U = 8
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+480 variables, all binary
+68 constraints, all linear; 960 nonzeros
+	60 equality constraints
+	8 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 480 variables (0 integer, 480 binary);
+Objectives: 1 linear; 
+Constraints:  68 linear;
+
+AMPL MP final model has 480 variables (0 integer, 480 binary);
+Objectives: 1 linear; 
+Constraints:  68 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 68 rows, 480 columns and 960 nonzeros
+Model fingerprint: 0x08ab529c
+Variable types: 0 continuous, 480 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 68 rows, 480 columns, 960 nonzeros
+Variable types: 0 continuous, 480 integer (480 binary)
+Root relaxation presolved: 68 rows, 480 columns, 960 nonzeros
+
+
+Root relaxation: infeasible, 79 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (79 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        68         -         0       960         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       68        68        68         0         0         0           0s
+
+IIS computed: 68 constraints, 0 bounds
+IIS runtime: 0.02 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+79 simplex iterations
+1 branching node
+--- infeasible for U = 8 ---
+
+
+
+=========================================================
+=
+=     U = 9
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+540 variables, all binary
+69 constraints, all linear; 1080 nonzeros
+	60 equality constraints
+	9 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 540 variables (0 integer, 540 binary);
+Objectives: 1 linear; 
+Constraints:  69 linear;
+
+AMPL MP final model has 540 variables (0 integer, 540 binary);
+Objectives: 1 linear; 
+Constraints:  69 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 69 rows, 540 columns and 1080 nonzeros
+Model fingerprint: 0x5c483698
+Variable types: 0 continuous, 540 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 69 rows, 540 columns, 1080 nonzeros
+Variable types: 0 continuous, 540 integer (540 binary)
+Root relaxation presolved: 69 rows, 540 columns, 1080 nonzeros
+
+
+Root relaxation: infeasible, 76 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (76 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        69         -         0      1080         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       69        69        69         0         0         0           0s
+
+IIS computed: 69 constraints, 0 bounds
+IIS runtime: 0.02 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+76 simplex iterations
+1 branching node
+--- infeasible for U = 9 ---
+
+
+
+=========================================================
+=
+=     U = 10
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+600 variables, all binary
+70 constraints, all linear; 1200 nonzeros
+	60 equality constraints
+	10 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 600 variables (0 integer, 600 binary);
+Objectives: 1 linear; 
+Constraints:  70 linear;
+
+AMPL MP final model has 600 variables (0 integer, 600 binary);
+Objectives: 1 linear; 
+Constraints:  70 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 70 rows, 600 columns and 1200 nonzeros
+Model fingerprint: 0x7582032a
+Variable types: 0 continuous, 600 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 70 rows, 600 columns, 1200 nonzeros
+Variable types: 0 continuous, 600 integer (600 binary)
+Root relaxation presolved: 70 rows, 600 columns, 1200 nonzeros
+
+
+Root relaxation: infeasible, 100 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (100 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        70         -         0      1200         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       70        70        70         0         0         0           0s
+
+IIS computed: 70 constraints, 0 bounds
+IIS runtime: 0.02 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+100 simplex iterations
+1 branching node
+--- infeasible for U = 10 ---
+
+
+
+=========================================================
+=
+=     U = 11
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+660 variables, all binary
+71 constraints, all linear; 1320 nonzeros
+	60 equality constraints
+	11 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 660 variables (0 integer, 660 binary);
+Objectives: 1 linear; 
+Constraints:  71 linear;
+
+AMPL MP final model has 660 variables (0 integer, 660 binary);
+Objectives: 1 linear; 
+Constraints:  71 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 71 rows, 660 columns and 1320 nonzeros
+Model fingerprint: 0x457a3847
+Variable types: 0 continuous, 660 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 71 rows, 660 columns, 1320 nonzeros
+Variable types: 0 continuous, 660 integer (660 binary)
+Root relaxation presolved: 71 rows, 660 columns, 1320 nonzeros
+
+
+Root relaxation: infeasible, 95 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (95 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        71         -         0      1320         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       71        71        71         0         0         0           0s
+
+IIS computed: 71 constraints, 0 bounds
+IIS runtime: 0.03 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+95 simplex iterations
+1 branching node
+--- infeasible for U = 11 ---
+
+
+
+=========================================================
+=
+=     U = 12
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+720 variables, all binary
+72 constraints, all linear; 1440 nonzeros
+	60 equality constraints
+	12 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 720 variables (0 integer, 720 binary);
+Objectives: 1 linear; 
+Constraints:  72 linear;
+
+AMPL MP final model has 720 variables (0 integer, 720 binary);
+Objectives: 1 linear; 
+Constraints:  72 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 72 rows, 720 columns and 1440 nonzeros
+Model fingerprint: 0x727a8586
+Variable types: 0 continuous, 720 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 72 rows, 720 columns, 1440 nonzeros
+Variable types: 0 continuous, 720 integer (720 binary)
+Root relaxation presolved: 72 rows, 720 columns, 1440 nonzeros
+
+
+Root relaxation: infeasible, 109 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (109 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        72         -         0      1440         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       72        72        72         0         0         0           0s
+
+IIS computed: 72 constraints, 0 bounds
+IIS runtime: 0.03 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+109 simplex iterations
+1 branching node
+--- infeasible for U = 12 ---
+
+
+
+=========================================================
+=
+=     U = 13
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+780 variables, all binary
+73 constraints, all linear; 1560 nonzeros
+	60 equality constraints
+	13 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 780 variables (0 integer, 780 binary);
+Objectives: 1 linear; 
+Constraints:  73 linear;
+
+AMPL MP final model has 780 variables (0 integer, 780 binary);
+Objectives: 1 linear; 
+Constraints:  73 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 73 rows, 780 columns and 1560 nonzeros
+Model fingerprint: 0x9372b534
+Variable types: 0 continuous, 780 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 73 rows, 780 columns, 1560 nonzeros
+Variable types: 0 continuous, 780 integer (780 binary)
+Root relaxation presolved: 73 rows, 780 columns, 1560 nonzeros
+
+
+Root relaxation: infeasible, 106 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (106 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        73         -         0      1560         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       73        73        73         0         0         0           0s
+
+IIS computed: 73 constraints, 0 bounds
+IIS runtime: 0.03 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+106 simplex iterations
+1 branching node
+--- infeasible for U = 13 ---
+
+
+
+=========================================================
+=
+=     U = 14
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+840 variables, all binary
+74 constraints, all linear; 1680 nonzeros
+	60 equality constraints
+	14 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 840 variables (0 integer, 840 binary);
+Objectives: 1 linear; 
+Constraints:  74 linear;
+
+AMPL MP final model has 840 variables (0 integer, 840 binary);
+Objectives: 1 linear; 
+Constraints:  74 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 74 rows, 840 columns and 1680 nonzeros
+Model fingerprint: 0xc2b24a94
+Variable types: 0 continuous, 840 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.00s
+Presolved: 74 rows, 840 columns, 1680 nonzeros
+Variable types: 0 continuous, 840 integer (840 binary)
+Root relaxation presolved: 74 rows, 840 columns, 1680 nonzeros
+
+
+Root relaxation: infeasible, 132 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (132 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        74         -         0      1680         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       74        74        74         0         0         0           0s
+
+IIS computed: 74 constraints, 0 bounds
+IIS runtime: 0.04 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+132 simplex iterations
+1 branching node
+--- infeasible for U = 14 ---
+
+
+
+=========================================================
+=
+=     U = 15
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+900 variables, all binary
+75 constraints, all linear; 1800 nonzeros
+	60 equality constraints
+	15 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 900 variables (0 integer, 900 binary);
+Objectives: 1 linear; 
+Constraints:  75 linear;
+
+AMPL MP final model has 900 variables (0 integer, 900 binary);
+Objectives: 1 linear; 
+Constraints:  75 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 75 rows, 900 columns and 1800 nonzeros
+Model fingerprint: 0x498c3085
+Variable types: 0 continuous, 900 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.01s
+Presolved: 75 rows, 900 columns, 1800 nonzeros
+Variable types: 0 continuous, 900 integer (900 binary)
+Root relaxation presolved: 75 rows, 900 columns, 1800 nonzeros
+
+
+Root relaxation: infeasible, 132 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (132 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        75         -         0      1800         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       75        75        75         0         0         0           0s
+
+IIS computed: 75 constraints, 0 bounds
+IIS runtime: 0.04 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+132 simplex iterations
+1 branching node
+--- infeasible for U = 15 ---
+
+
+
+=========================================================
+=
+=     U = 16
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+960 variables, all binary
+76 constraints, all linear; 1920 nonzeros
+	60 equality constraints
+	16 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 960 variables (0 integer, 960 binary);
+Objectives: 1 linear; 
+Constraints:  76 linear;
+
+AMPL MP final model has 960 variables (0 integer, 960 binary);
+Objectives: 1 linear; 
+Constraints:  76 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 76 rows, 960 columns and 1920 nonzeros
+Model fingerprint: 0xf3475fa7
+Variable types: 0 continuous, 960 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.01s
+Presolved: 76 rows, 960 columns, 1920 nonzeros
+Variable types: 0 continuous, 960 integer (960 binary)
+Root relaxation presolved: 76 rows, 960 columns, 1920 nonzeros
+
+
+Root relaxation: infeasible, 136 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (136 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        76         -         0      1920         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       76        76        76         0         0         0           0s
+
+IIS computed: 76 constraints, 0 bounds
+IIS runtime: 0.04 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+136 simplex iterations
+1 branching node
+--- infeasible for U = 16 ---
+
+
+
+=========================================================
+=
+=     U = 17
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+1020 variables, all binary
+77 constraints, all linear; 2040 nonzeros
+	60 equality constraints
+	17 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 1020 variables (0 integer, 1020 binary);
+Objectives: 1 linear; 
+Constraints:  77 linear;
+
+AMPL MP final model has 1020 variables (0 integer, 1020 binary);
+Objectives: 1 linear; 
+Constraints:  77 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 77 rows, 1020 columns and 2040 nonzeros
+Model fingerprint: 0x1412f44f
+Variable types: 0 continuous, 1020 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.01s
+Presolved: 77 rows, 1020 columns, 2040 nonzeros
+Variable types: 0 continuous, 1020 integer (1020 binary)
+Root relaxation presolved: 77 rows, 1020 columns, 2040 nonzeros
+
+
+Root relaxation: infeasible, 161 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (161 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        77         -         0      2040         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       77        77        77         0         0         0           0s
+
+IIS computed: 77 constraints, 0 bounds
+IIS runtime: 0.05 seconds (0.01 work units)
+Gurobi 12.0.3: infeasible problem
+161 simplex iterations
+1 branching node
+--- infeasible for U = 17 ---
+
+
+
+=========================================================
+=
+=     U = 18
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+1080 variables, all binary
+78 constraints, all linear; 2160 nonzeros
+	60 equality constraints
+	18 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 1080 variables (0 integer, 1080 binary);
+Objectives: 1 linear; 
+Constraints:  78 linear;
+
+AMPL MP final model has 1080 variables (0 integer, 1080 binary);
+Objectives: 1 linear; 
+Constraints:  78 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 78 rows, 1080 columns and 2160 nonzeros
+Model fingerprint: 0xb4c30565
+Variable types: 0 continuous, 1080 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.01s
+Presolved: 78 rows, 1080 columns, 2160 nonzeros
+Variable types: 0 continuous, 1080 integer (1080 binary)
+Root relaxation presolved: 78 rows, 1080 columns, 2160 nonzeros
+
+
+Root relaxation: infeasible, 180 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (180 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        78         -         0      2160         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       78        78        78         0         0         0           0s
+
+IIS computed: 78 constraints, 0 bounds
+IIS runtime: 0.05 seconds (0.02 work units)
+Gurobi 12.0.3: infeasible problem
+180 simplex iterations
+1 branching node
+--- infeasible for U = 18 ---
+
+
+
+=========================================================
+=
+=     U = 19
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+1140 variables, all binary
+79 constraints, all linear; 2280 nonzeros
+	60 equality constraints
+	19 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 1140 variables (0 integer, 1140 binary);
+Objectives: 1 linear; 
+Constraints:  79 linear;
+
+AMPL MP final model has 1140 variables (0 integer, 1140 binary);
+Objectives: 1 linear; 
+Constraints:  79 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 79 rows, 1140 columns and 2280 nonzeros
+Model fingerprint: 0xea7be721
+Variable types: 0 continuous, 1140 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.01s
+Presolved: 79 rows, 1140 columns, 2280 nonzeros
+Variable types: 0 continuous, 1140 integer (1140 binary)
+Root relaxation presolved: 79 rows, 1140 columns, 2280 nonzeros
+
+
+Root relaxation: infeasible, 187 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 1 nodes (187 simplex iterations) in 0.01 seconds (0.01 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        79         -         0      2280         -           0s
+Numerical troubles encountered during IIS computation
+Numerical troubles encountered during IIS computation
+       79        79        79         0         0         0           0s
+
+IIS computed: 79 constraints, 0 bounds
+IIS runtime: 0.05 seconds (0.02 work units)
+Gurobi 12.0.3: infeasible problem
+187 simplex iterations
+1 branching node
+--- infeasible for U = 19 ---
+
+
+
+=========================================================
+=
+=     U = 20
+=
+=========================================================
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+1200 variables, all binary
+80 constraints, all linear; 2400 nonzeros
+	60 equality constraints
+	20 inequality constraints
+1 linear objective; 0 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 1200 variables (0 integer, 1200 binary);
+Objectives: 1 linear; 
+Constraints:  80 linear;
+
+AMPL MP final model has 1200 variables (0 integer, 1200 binary);
+Objectives: 1 linear; 
+Constraints:  80 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Warning: LP warm-starts, PStart/DStart, discarded due to model modification
+Optimize a model with 80 rows, 1200 columns and 2400 nonzeros
+Model fingerprint: 0xe0c5f99c
+Variable types: 0 continuous, 1200 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+03]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint R0 by 19000.000000000
+
+Presolve time: 0.01s
+Presolved: 80 rows, 1200 columns, 2400 nonzeros
+Variable types: 0 continuous, 1200 integer (1200 binary)
+Root relaxation presolved: 80 rows, 1200 columns, 2400 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 135 iterations, 0.00 seconds (0.00 work units)
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   22          -    0.00000      -     -    0s
+     0     0    0.00000    0   37          -    0.00000      -     -    0s
+     0     0    0.00000    0   70          -    0.00000      -     -    0s
+     0     0    0.00000    0   38          -    0.00000      -     -    0s
+     0     0    0.00000    0   38          -    0.00000      -     -    0s
+     0     2    0.00000    0   36          -    0.00000      -     -    0s
+* 6487    47              74       0.0000000    0.00000  0.00%  48.8    2s
+
+Cutting planes:
+  Cover: 284
+  MIR: 11
+  StrongCG: 12
+  Inf proof: 7
+  RLT: 1
+
+Explored 6561 nodes (323822 simplex iterations) in 2.78 seconds (4.46 work units)
+Thread count was 4 (of 64 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 0
+323822 simplex iterations
+6561 branching nodes
+Items in bins
+==============
+  1 : 1 56 60 
+  2 : 2 41 58 
+  3 : 16 23 39 
+  4 : 7 31 59 
+  5 : 10 30 50 
+  6 : 6 34 57 
+  7 : 17 18 49 
+  8 : 15 22 46 
+  9 : 3 44 55 
+ 10 : 4 47 53 
+ 11 : 9 35 48 
+ 12 : 14 27 54 
+ 13 : 11 28 52 
+ 14 : 12 33 36 
+ 15 : 13 29 40 
+ 16 : 20 26 37 
+ 17 : 8 38 43 
+ 18 : 24 25 32 
+ 19 : 5 45 51 
+ 20 : 19 21 42 
+Number of bins
+==============
+20
+
+NEOS Server Home
+
