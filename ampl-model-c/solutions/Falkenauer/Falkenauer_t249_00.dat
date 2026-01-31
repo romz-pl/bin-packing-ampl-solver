@@ -1,5 +1,5 @@
 param N := 249;
-param U := 249;
+param U := 83;
 
 param CAPACITY := 1000;
 
